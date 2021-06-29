@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #bffff7;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 1;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto bg-dark">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">EREN <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sport.html">Sport</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown bg-dark">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="contactme.html">Contact Me</a>
+                <a class="dropdown-item" href="aboutme.html">About Me</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <main class="formdiv" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 style="text-align: center; margin-top: 50px;">Contact Me</h1><br><br><br><br><br>
+
+        <form class="form" style="margin: 0px;" action="response.html" method="POST">
+            <div class="center">
+                <label for="name">First name:</label>
+                <input type="text" id="name" name="name" maxlength="30" minlength="1" required><br><br>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" maxlength="30" minlength="1" required><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" maxlength="30" minlength="1" required><br><br>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="05XX-XXX-XXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  maxlength="30" minlength="1" required><br><br>
+                <label for="issue">Issue:</label>
+                <input type="text" id="issue" name="issue"><br><br>
+                <label for="issue">Textfield:</label><br><br>
+                <textarea id="textfield" name="textfield" rows="11" cols="40"></textarea><br><br>
+                <br><br><br>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <br><br>
+        <div>
+            <p style="display: block; width: 100%; text-align: center; position: static;">If you want to contact me via e-mail here is the e-mail:</p><br>
+            <p style="display: block; width: 100%; text-align: center;">erenkarakaya93@eskisehir.edu.tr</p>
+        </div>
+
+
+        <div class="social">
+            <a href="sgasg"><img src="images/youtube.jpg" alt="youtube"></a>
+            <a href="fdsgagsd"><img src="images/twitter.jpg" alt="twitter"></a>
+            <a href="fsagshgdsh"><img src="images/instagram.jpg" alt="instagram"></a>
+        </div>
+
+        
+        
+
+    </main>
+
+    <br><br><br>
+    
+    <footer>Copyright © 2021 by Eren. All Rights Reserved.</footer>
+
+</body>
+
+</html>

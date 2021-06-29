@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #f1f1f1;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 1;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto bg-dark">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">EREN <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sport.html">Sport</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+            </li>
+            <li class="nav-item dropdown bg-dark">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="contactme.html">Contact Me</a>
+                <a class="dropdown-item" href="aboutme.html">About Me</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="signin.html">Sign In</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <main class="registermain">
+        <h1 class="registerh1" style="float: right; margin-left: 900px;">Register</h1><br><br><br><br><br>
+
+        <img  class="view2" src="images/view2.jpg" alt="view2">
+        
+        <form class="registerform" action="thank.html" method="POST">
+            <div class="register">
+                <label for="name2">First name:</label>
+                <input type="text" id="name2" name="name2" maxlength="30" minlength="1" required>
+                <label for="surname2">Surname:</label>
+                <input type="text" id="surname2" name="surname2" maxlength="30" minlength="1" required><br>
+                <label for="pwd1">Password:</label>
+                <input type="password" id="pwd1" name="pwd1" required><br>
+                <label for="pwd2">Password Again:</label>
+                <input type="password" id="pwd2" name="pwd2" required><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <label for="email1">E-mail:</label>
+                <input type="email" id="email1" name="email1" maxlength="70" minlength="1" required autocomplete="on"><br>
+                <label for="phone1">Enter your phone number:</label>
+                <input type="tel" id="phone1" name="phone1" placeholder="05XX-XXX-XXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  maxlength="30" minlength="1" required><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br>
+                <label for="myfile">Your Photo:</label>
+                <input type="file" id="myfile" name="myfile"><br>
+                <label for="interests">Interests:</label><br>
+                <input type="checkbox" id="music" name="music" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sport" name="sport" value="sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" id="drawing" name="drawing" value="drawing">
+                <label for="drawing">Drawing</label><br>
+                <input type="checkbox" id="reading" name="reading" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="film" name="film" value="Film">
+                <label for="film">Film</label>
+                <input type="checkbox" id="gaming" name="gaming" value="gaming">
+                <label for="gaming">Gaming</label><br><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+        
+        
+        
+        
+        
+        
+
+    </main>
+
+    <br><br><br>
+    
+    <footer class="footer">Copyright © 2021 by Eren. All Rights Reserved.</footer>
+
+</body>
+
+</html>
